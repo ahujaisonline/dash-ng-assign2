@@ -1,0 +1,9 @@
+<div class="cards-wrap">
+  <ng-container *ngIf="data && data.length">
+    <card *ngFor="let item of data" [type]='type' [data]='item'></card>
+  </ng-container>
+  <ng-container *ngIf="type == 'image'">
+    <img-card *ngFor="let item of cityData" [data]='item'></img-card>
+  </ng-container>
+
+</div>

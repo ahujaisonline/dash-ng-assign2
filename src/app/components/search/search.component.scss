@@ -1,0 +1,32 @@
+form.search-bar {
+  input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    width: 88%;
+    background: white;
+    border-radius: 4px 0 0 4px;
+  }
+  input[type="text"]:focus {
+   outline-color: transparent;
+  }
+  button {
+    width: 12%;
+    padding: 10px;
+    background: white;
+    color: grey;
+    font-size: 17px;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }
+  button:hover {
+    background-color: #00cec9;
+  }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

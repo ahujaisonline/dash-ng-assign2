@@ -1,0 +1,14 @@
+<div class="card" [ngClass]="{'user': type == 'user' || type == 'whatsapp', 'shape-oval': type == 'dep', 'center': type == 'whatsapp'}">
+    <user [data]="data" *ngIf="type == 'user' || type == 'whatsapp'"></user>
+    <div class="address">
+        <div class="icon"  *ngIf="type == 'user'">
+            <img src="./../../../assets/icons/Jobs by Location.svg" alt="location">
+        </div>
+         <div class="icon"  *ngIf="type == 'whatsapp'">
+            <img width="100%" src="./../../../assets/icons/whatsapp.png" alt="WhatsApp">
+        </div>
+        <div class="add" [ngClass]="{'dep': type == 'dep', 'btn': type == 'whatsapp'}">
+            {{data.location.city}}
+        </div>
+    </div>
+</div>

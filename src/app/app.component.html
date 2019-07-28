@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <header>
+        <app-header></app-header>
+    </header>
+    <main>
+        <job-tile [type]="near"></job-tile>
+        <cards [type]="userType"></cards>
+        <div class="category">
+            <h3>Jobs by category</h3>
+            <cards [type]=""></cards>
+        </div>
+        <job-tile [type]="for"></job-tile>
+        <cards [type]="dep"></cards>
+        <cards [type]="userType"></cards>
+        <card [type]='singleType' [data]='whatsappData'></card>
+        <job-tile [type]="by"></job-tile>
+        <cards [type]='imgType'></cards>
+    </main>
+    <footer>
+
+    </footer>
+
+</div>

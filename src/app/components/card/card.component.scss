@@ -1,0 +1,45 @@
+.card {
+  width: 100px;
+  height: auto;
+  text-align: center;
+  &.user {
+    width: 300px;
+    height: auto;
+  }
+  &.shape-oval {
+    border-radius: 35%;
+  }
+  &.center {
+    margin: 0 auto;
+  }
+  background-color: white;
+  margin: 20px;
+  padding: 20px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  .address {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .add {
+      flex-basis: 80%;
+      align-self: center;
+    }
+    .icon {
+      flex-basis: 15%;
+    }
+  }
+  .dep {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .btn {
+    background-color: #22a6b3;
+    padding: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.cards-wrap{
+    display: flex;
+    overflow-x: scroll;
+     &::-webkit-scrollbar { width: 0 !important }
+}
+
+@media only screen and (min-width: 600px) {
+  .cards-wrap{
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+     
+  }
+}

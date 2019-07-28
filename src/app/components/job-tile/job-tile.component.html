@@ -1,0 +1,14 @@
+<div class="tile">
+  <div class="icon">
+    <img [src]="imgIcon" alt="job icon">
+  </div>
+  <div class="text">
+    <div>Job {{type}} 
+      <span *ngIf="type == 'by'">city</span>
+      <span *ngIf="type != 'by'">you</span>
+    </div><div>In and around sector</div>
+  </div>
+  <div class="link">
+    <a href="#"> View</a>
+  </div>
+</div>
